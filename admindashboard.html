@@ -1,0 +1,179 @@
+
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+    <title>Resource Management System</title>
+    <meta content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0' name='viewport' />
+    <meta name="viewport" content="width=device-width" />
+    <link href="assets/css/bootstrap.min.css" rel="stylesheet" />
+    <link href="assets/css/paper-dashboard.css" rel="stylesheet"/>
+    <link href="http://maxcdn.bootstrapcdn.com/font-awesome/latest/css/font-awesome.min.css" rel="stylesheet">
+    <link href='https://fonts.googleapis.com/css?family=Muli:400,300' rel='stylesheet' type='text/css'>
+    <link href="assets/css/themify-icons.css" rel="stylesheet">
+</head>
+<body>
+<div class="wrapper">
+    <div class="sidebar" data-background-color="white" data-active-color="danger">
+        <div class="sidebar-wrapper bg-info">
+            <div class="logo">
+                <a href="#" class="simple-text">
+                    Resource Management System
+                </a>
+            </div>
+
+            <ul class="nav">
+                <li class="active">
+                    <a href="admindashboard.html">
+                        <i class="ti-layout-media-center"></i>
+                        <p>Computer Center</p>
+                    </a>
+                </li>
+                <!--<li>
+                    <a href="#">
+                        <i class="ti-microsoft"></i>
+                        <p>Computer Lab </p>
+                    </a>
+                </li>-->
+                <li>
+                    <a href="#">
+                        <i class="ti-microsoft"></i>
+                        <p>Digital Library</p>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="main-panel">
+        <nav class="navbar navbar-default ">
+            <div class="container-fluid bg-info">
+                <div class="navbar-header">
+                    <a class="navbar-brand" href="#">Computer Center</a>
+                </div>
+                <div class="collapse navbar-collapse">
+                    <ul class="nav navbar-nav navbar-right">
+                        <!--<li>
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                                <i class="ti-home"></i>
+                                <p>Home</p>
+                            </a>
+                        </li>
+                        
+                        <li>
+                            <a href="#">
+                                <i class="ti-id-badge"></i>
+                                <p>Contact-Us</p>
+                            </a>
+                        </li>-->
+			<li>
+                            <a href="logout.php">
+                                <i class="ti-lock"></i>
+                                <p>log-out</p>
+                            </a>
+                        </li>
+                    </ul>
+
+                </div>
+            </div>
+        </nav>
+        <div class="content" style="background: radial-gradient(navajowhite, gray)">
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-md-3"></div>
+                    <div class="col-md-6" style="margin-top: 50px">
+                        <div >
+                            <div class="header">
+                                <h4 class="title">System Update >></h4>
+                            </div>
+                            <div class="content">
+                                <form action="update.php" method="post">
+                                    <div class="row">
+                                        <div class="col-md-6">
+                                            <div class="form-group">
+                                                <label>System Number</label>
+                                                <input type="text" name="sysno" class="form-control border-input" placeholder="EX: CC01">
+                                            </div>
+                                        </div>
+                                        <div class="col-md-6">
+                                            <div class="form-group">
+                                                <label>Computer Status</label>
+                                                <select name="status" class="form-control border-input">
+                                                    <option  >..select..</option>
+                                                    
+                                                    <option value="1" >Busy</option>
+						   <option value="0"  >Free</option>
+                                                </select>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-md-12">
+                                            <div class="form-group">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="text-center">
+                                        <button type="submit" value="submit" name="submit" class="btn btn-info btn-fill btn-wd "><span class="text-danger"> Update </span></button>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                    </div>
+                </div>
+            </div>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <footer class="footer">
+                <div class="container-fluid">
+                    <div class="row">
+                        <div class="col-md-12" >
+                            <div class="card" style="background-color: #d9edf7">
+                                <nav class="text-center">
+                                    <ul>
+                                        <li>
+                                            <a href="#">
+                                                <h5 class="text-danger">Rajkiya Engineering College, Banda</h5>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <!--<a href="#">
+                                                <h5 class="text-danger"> Blog</h5>
+                                            </a>-->
+                                        </li>
+                                    </ul>
+                                </nav>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </footer>
+
+        </div>
+    </div>
+
+
+</body>
+
+
+<script src="assets/js/jquery-1.10.2.js" type="text/javascript"></script>
+<script src="assets/js/bootstrap.min.js" type="text/javascript"></script>
+
+
+</html>
